@@ -1,8 +1,6 @@
 const express = require('express');
 const {studentSearch,selectedJobApplication} = require('../controllers/jobSearchControllers')
 
-// userRoutes.js
-const express = require("express");
 
 const router = express.Router();
 
