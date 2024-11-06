@@ -1,7 +1,8 @@
 // server.js
-require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors')
+require('dotenv').config();
 const connectDB = require('./config/db');
 const restaurantRoute = require('./routes/restaurantRoutes');
 const jobSearchRoutes = require('./routes/jobSearchRoutes');
