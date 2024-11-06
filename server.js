@@ -12,6 +12,11 @@ const app = express();
 app.use(cors())
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the backend API!');
+});
+
+
 
 app.use('/api/restaurants', restaurantRoutes);
 app.use('/api/jobSearch', jobSearchRoutes);
