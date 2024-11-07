@@ -9,7 +9,7 @@ const jobSearchRoutes = require('./routes/jobSearchRoutes');
 
 const app = express();
 
-app.use(cors())
+app.use(cors({ origin: 'https://ffdgvk.netlify.app' })); // Replace with your Netlify URL
 app.use(express.json());
 
 app.get('/', (req, res) => {
